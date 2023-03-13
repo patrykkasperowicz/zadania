@@ -1,0 +1,9 @@
+8
+Kowalski 7 3 4 6 2 3 4 5
+Nowak 5 3 4 5 6 2
+Mickiewicz 8 2 3 4 2 3 4 1 2
+Słowacki 4 5 6 2 4
+Norwid 5 3 4 5 6 4
+Krasicki 3 4 2 6
+Sienkiewicz 6 4 5 4 5 6 4
+Kochanowski 8 3 4 5 4 2 3 4 5

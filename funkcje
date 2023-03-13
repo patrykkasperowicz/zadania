@@ -1,0 +1,178 @@
+int main(){
+    ifstream plik("ciagi.txt");
+    string s;
+    for(int i = 0; i < 1000; i++) plik >> liczby[i];
+
+    B();
+        }
+
+long long sze(string liczba){
+    long long p = 1;
+    long long wyn = 0;
+    for(int i = liczba.size() - 1; i >= 0; i--){
+        int t = liczba[i] - 'A' + 10;
+        wyn += (t*p);
+        p *= 16;
+    }
+    return wyn;
+}
+
+int nww(int x, int y){
+    int z;
+    int g;
+    z = x * y;
+    g = nwd(x, y);
+    return z/g;
+    }
+
+ (nwd) while (x % y != 0){
+        z = x % y;
+        x = y;
+        y = z;
+        }
+
+int sumcyfr(int x){
+    int wynik = 0;
+    while (x != 0){
+    wynik = wynik + (x % 10);
+    x = x / 10;
+    }
+    return wynik;
+    }
+
+int NWD(int n, int m)
+{
+    int reszta;
+    while(true){
+    reszta = n % m;
+    if(reszta == 0) return m;
+    n = m;
+    m = reszta;
+    }
+
+    return 0;
+}
+
+bool pierwsza (int n){
+if(n < 2) return false;
+if(n == 2) return true;
+for(int i = 2; i * i <= n; i++){
+    if (n % i == 0) return false;
+}
+return true;
+}
+
+int rosnacy(int n){
+    int poprzednia = n % 10;
+    n /= 10;
+    int tmp;
+    while (n > 0){
+        if(poprzednia <= n%10) return false;
+        poprzednia = n % 10;
+        n /= 10;
+    }
+    return true;
+}
+
+void bubbleSort(table[i], int Size)
+{
+    bool unsorted = true;
+    int temp;
+    while (unsorted){
+	unsorted = false;
+	for (int i = 1; i < Size; i++) {
+	    if (table[i-1] > table[i]) {
+		temp = table[i];
+		table[i] = table[i-1];
+		table[i-1] = temp;
+		unsorted = true;
+	    }
+	}
+    }
+}
+
+int NWD(int n, int m){
+    int reszta;
+    while(true){
+    reszta = n % m;
+    if(reszta == 0) return m;
+    n = m;
+    m = reszta;
+    }
+    return 0;
+}
+
+int sumcyfr(int x){
+    int wynik = 0;
+    while (x != 0){
+    wynik = wynik + (x % 10);
+    x = x / 10;
+    }
+    return wynik;
+    }
+
+int LongtoString(long l){
+    if(l < 10) return (char)('0' + l);
+    return (char)('A' - 10 + l);
+}
+
+bool palindrom(string s1){
+    for (int i = 0; i < s1.size()/2; i++){
+        if(s1[i] != s1[s1.size() - 1 - i]) return false;
+    }
+    return true;
+}
+
+long cnl(char c){
+    if (c>= '0' && c <= '9') return c - '0';
+    return c - 'A' + 10;
+}
+
+long toint(string s, int n){
+    long w = 0;
+    long pot = 1;
+    for(int i = s.size() - 1; i >= 0; i--){
+        w = w + cnl(s[i])*pot;
+        pot = pot*n;
+    }
+    return w;
+}
+//na kazda inna wystarczy zmienic mnozenie//
+long long naDziesietny (string s){
+    long long w = 0;
+    long licznik = 1;
+    for (int i = s.size(); i > 0; i--){
+        w = cnl(s[i-1])*licznik+w;
+        licznik *= 16;
+    }
+    return w;
+}
+
+void mySwap(int a, int b){
+    int c = a;
+    a = b;
+    b = c;
+    cout << "w swap " << a << " " << b << endl;
+}
+
+int potega(int x, int n){
+    int a = 0;
+    if(n == 0) return 1;
+    if (n % 2 != 0){
+        return x * potega(x, n - 1);
+    }
+    else{
+        a = potega(x, n/2);
+        return a*a;
+    }
+}
+
+long potega2 (long x, long n){
+    long w = 1;
+    while (n > 0){
+        if(n % 2 == 1) w *= x;
+        x *= x;
+        n /= 2;
+    }
+    return w;
+}
